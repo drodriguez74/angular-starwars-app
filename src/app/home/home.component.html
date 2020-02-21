@@ -1,0 +1,9 @@
+<h2>Films</h2>
+
+<ul *ngIf="films">
+  <li *ngFor="let movie of films">
+    <p class="title">{{ movie.title }}</p>
+    <p class="directory">{{ movie.director }}</p>
+    <a class="site" href="{{ movie.url }}">endpoint</a>
+  </li>
+</ul>
